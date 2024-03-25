@@ -1,0 +1,12 @@
+wget -O genshin.zip 'https://drive.google.com/uc? export=download&id=1oGHdTf4_7>
+
+unzip genshin.zip
+chmod +x list_character.csv
+
+unzip genshin_character.zip
+cd genshin_character
+
+for filename in *; do 
+namabaru=$(echo -n "$filename" | xxd -r -p)
+mv "$filename" "$namabaru"
+done
